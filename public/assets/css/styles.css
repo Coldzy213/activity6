@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+.wrapper{
+    padding: 20px;
+    height: 550px;
+    width: 450px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 30px 0px rgb(229, 228, 228);
+   text-align: center;
+}
+.wrapper .logo{
+    display: flex;
+    justify-content: center;
+}
+.wrapper .title{
+    text-align: center;
+    margin-bottom: 5px;
+    color: #1d3557;
+}
+.wrapper img{
+    width: 150px;
+    height: 150px;
+}
+.wrapper form .input-box{
+    margin-bottom: 10px;
+    position: relative;
+}
+.wrapper form .input-box input{
+    height: 50px;
+    width: 100%;
+    border: 1px solid rgb(206, 201, 201);
+    outline: none;
+    border-radius: 2px;
+    padding: 8px 10px 5px 10px;
+}
+.wrapper .input-box label{
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    transition: all 0.3s ease;
+    
+}
+.wrapper .input-box input:focus + label{
+    top: 2px;
+    color: rgb(103, 103, 103);
+    font-size: 12px;
+}
+.wrapper .input-box input:not(:placeholder-shown) + label{
+    top: 2px;
+    color: rgb(103, 103, 103);
+    font-size: 12px;
+}
+.btn{
+    height: 40px;
+    width: 100%;
+    margin-top: 8px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn.login{
+    background-color: #1d3557;
+}
+.btn.login:hover{
+    background-color: #32527e;
+}
+.input-box-social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.input-box-social-media .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    margin-bottom: 15px;
+}
+.btn.facebook{
+    background: #007bff;
+}
+.btn.facebook:hover{
+    background-color: #0169d8;
+}
+.btn.google{
+    background-color: #e63946;
+}
+.btn.google:hover{
+    background-color: #de5762;
+}
+.form-cols a{
+    color: #e63946;
+    transition: all 0.6s ease;
+}
+.form-cols a:hover{
+    color: #a51924;
+    text-decoration: underline;
+    transition: all 0.6s ease;
+}
+
